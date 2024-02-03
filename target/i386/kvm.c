@@ -1514,7 +1514,7 @@ int kvm_arch_init_vcpu(CPUState *cs)
     }
 
     if (cpu->expose_kvm) {
-        memcpy(signature, "KVMKVMKVM\0\0\0", 12);
+        memcpy(signature, "GENERALINTEL", 12);
         c = &cpuid_data.entries[cpuid_i++];
         c->function = KVM_CPUID_SIGNATURE | kvm_base;
         c->eax = KVM_CPUID_FEATURES | kvm_base;

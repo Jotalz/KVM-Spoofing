@@ -150,7 +150,7 @@ static void ads7846_realize(SSISlave *d, Error **errp)
 
     /* We want absolute coordinates */
     qemu_add_mouse_event_handler(ads7846_ts_event, s, 1,
-                    "QEMU ADS7846-driven Touchscreen");
+                    "EPIC ADS7846-driven Touchscreen");
 
     ads7846_int_update(s);
 

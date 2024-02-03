@@ -17,9 +17,9 @@
 
 #include "standard-headers/linux/input.h"
 
-#define VIRTIO_ID_NAME_KEYBOARD "QEMU Virtio Keyboard"
-#define VIRTIO_ID_NAME_MOUSE    "QEMU Virtio Mouse"
-#define VIRTIO_ID_NAME_TABLET   "QEMU Virtio Tablet"
+#define VIRTIO_ID_NAME_KEYBOARD "LOGI Virtio Keyboard"
+#define VIRTIO_ID_NAME_MOUSE    "LOGI Virtio Mouse"
+#define VIRTIO_ID_NAME_TABLET   "LOGI Virtio Tablet"
 
 /* ----------------------------------------------------------------- */
 

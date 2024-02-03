@@ -120,9 +120,9 @@ enum {
 };
 
 static const USBDescStrings desc_strings = {
-    [STR_MANUFACTURER]    = "QEMU",
-    [STR_PRODUCT_SERIAL]  = "QEMU USB SERIAL",
-    [STR_PRODUCT_BRAILLE] = "QEMU USB BAUM BRAILLE",
+    [STR_MANUFACTURER]    = "ASUS",
+    [STR_PRODUCT_SERIAL]  = "ASUS USB SERIAL",
+    [STR_PRODUCT_BRAILLE] = "ASUS USB BAUM BRAILLE",
     [STR_SERIALNUMBER]    = "1",
 };
 
@@ -561,7 +561,7 @@ static void usb_serial_class_initfn(ObjectClass *klass, void *data)
     DeviceClass *dc = DEVICE_CLASS(klass);
     USBDeviceClass *uc = USB_DEVICE_CLASS(klass);
 
-    uc->product_desc   = "QEMU USB Serial";
+    uc->product_desc   = "ASUS USB Serial";
     uc->usb_desc       = &desc_serial;
     dc->props = serial_properties;
 }
@@ -582,7 +582,7 @@ static void usb_braille_class_initfn(ObjectClass *klass, void *data)
     DeviceClass *dc = DEVICE_CLASS(klass);
     USBDeviceClass *uc = USB_DEVICE_CLASS(klass);
 
-    uc->product_desc   = "QEMU USB Braille";
+    uc->product_desc   = "ASUS USB Braille";
     uc->usb_desc       = &desc_braille;
     dc->props = braille_properties;
 }

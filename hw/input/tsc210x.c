@@ -1101,7 +1101,7 @@ uWireSlave *tsc2102_init(qemu_irq pint)
     tsc210x_reset(s);
 
     qemu_add_mouse_event_handler(tsc210x_touchscreen_event, s, 1,
-                    "QEMU TSC2102-driven Touchscreen");
+                    "EPIC TSC2102-driven Touchscreen");
 
     AUD_register_card(s->name, &s->card);
 
@@ -1149,7 +1149,7 @@ uWireSlave *tsc2301_init(qemu_irq penirq, qemu_irq kbirq, qemu_irq dav)
     tsc210x_reset(s);
 
     qemu_add_mouse_event_handler(tsc210x_touchscreen_event, s, 1,
-                    "QEMU TSC2301-driven Touchscreen");
+                    "EPIC TSC2301-driven Touchscreen");
 
     AUD_register_card(s->name, &s->card);
 
@@ -1201,7 +1201,6 @@ void tsc210x_set_transform(uWireSlave *chip,
     s->tr[6] = muldiv64(ltr[6], 1, info->a[6]);
     s->tr[7] = muldiv64(ltr[7], 1 << 4, ltr[6]);
 #else
-
     /* This version assumes touchscreen X & Y axis are parallel or
      * perpendicular to LCD's  X & Y axis in some way.  */
     if (abs(info->a[0]) > abs(info->a[1])) {

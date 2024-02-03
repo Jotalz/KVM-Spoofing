@@ -189,12 +189,12 @@ static
 size_t mptsas_config_manufacturing_0(MPTSASState *s, uint8_t **data, int address)
 {
     return MPTSAS_CONFIG_PACK(0, MPI_CONFIG_PAGETYPE_MANUFACTURING, 0x00,
-                              "s16s8s16s16s16",
-                              "QEMU MPT Fusion",
+                              "s12s6s12s12s12",
+                              "ASUS MPT Fusion",
                               "2.5",
-                              "QEMU MPT Fusion",
-                              "QEMU",
-                              "0000111122223333");
+                              "ASUS MPT Fusion",
+                              "ASUS",
+                              "2713236181009527");
 }
 
 static
