@@ -1514,7 +1514,7 @@ int kvm_arch_init_vcpu(CPUState *cs)
     }
 
     if (cpu->expose_kvm) {
-        memcpy(signature, "GENERALINTEL", 12);
+        memcpy(signature, "GENERALINTEL", 12); //"GenuineIntel" or "AuthenticAMD"
         c = &cpuid_data.entries[cpuid_i++];
         c->function = KVM_CPUID_SIGNATURE | kvm_base;
         c->eax = KVM_CPUID_FEATURES | kvm_base;

@@ -2534,7 +2534,7 @@ int ide_init_drive(IDEState *s, BlockBackend *blk, IDEDriveKind kind,
             strcpy(s->drive_model_str, "ASUS MICRODRIVE");
             break;
         default:
-            strcpy(s->drive_model_str, "ASUS HARDDISK");
+            strcpy(s->drive_model_str, "WDC WD10JPVX-22QCYT0");
             break;
         }
     }

@@ -2388,7 +2388,7 @@ static void scsi_realize(SCSIDevice *dev, Error **errp)
         s->version = g_strdup(qemu_hw_version());
     }
     if (!s->vendor) {
-        s->vendor = g_strdup("ASUS");
+        s->vendor = g_strdup("Western Digital Technologies, Inc.");
     }
     if (!s->device_id) {
         if (s->serial) {
@@ -2442,7 +2442,7 @@ static void scsi_hd_realize(SCSIDevice *dev, Error **errp)
     s->qdev.blocksize = s->qdev.conf.logical_block_size;
     s->qdev.type = TYPE_DISK;
     if (!s->product) {
-        s->product = g_strdup("ASUS HARDDISK");
+        s->product = g_strdup("WDC WD10JPVX-22QCYT0");
     }
     scsi_realize(&s->qdev, errp);
     if (ctx) {
