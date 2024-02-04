@@ -15,6 +15,9 @@ Make some exploratory attempts due to possible virtual machine detection in the 
 
 personal notes
 
+## Use
+* [Tutorial 1](https://www.twblogs.net/a/5e752048bd9eee21168637b9/?lang=zh-cn)
+* [Tutorial 2](https://hlyani.github.io/notes/openstack/qemu_make.html)
 
 ## Acknowledgments
 
